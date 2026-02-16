@@ -20,7 +20,7 @@ Not every OAuth implementation is testable. You need programs that:
 1. **Allow creation of OAuth apps via a Developer Console** — platforms like Slack, Shopify etc. that let you register your own OAuth application.
 2. **Provide granular permission controls** — the developer console should let you restrict which scopes your app can request. For example, Slack lets you configure exactly which permissions your app is allowed to request from users.
 
-> **Note:** Creating an app and generating tokens is not always straightforward. You will need to manually read the platform's developer documentation. There are nuances around redirect URLs, client secrets, authorization flows, and token exchange endpoints that vary per platform. Take the time to understand the target's OAuth implementation before testing. Because of these hurdles most people don't bother creating OAuth apps and without creating apps you can't test permission realted issues in Oauth scopes.
+> **Note:** Creating an app and generating tokens is not always straightforward. You will need to manually read the platform's developer documentation. There are nuances around redirect URLs, client secrets, authorization flows, and token exchange endpoints that vary per platform. Take the time to understand the target's OAuth implementation before testing. Because of these hurdles most people don't bother creating OAuth apps and without creating apps you can't test permission related issues in Oauth scopes.
 
 ## The Golden Rule: More Scope = More Attack Surface
 
@@ -42,7 +42,7 @@ https://example.com/v2/oauth?scope=read&redirect_url=https://yourapp.com
 https://example.com/v2/oauth?scope=read,write&redirect_url=https://yourapp.com
 ```
 5. Complete the OAuth flow and obtain a token.
-6. Test if the generated token actually has `write` permission** by performing write operations via the API.
+6. Test if the generated token actually has `write` permission by performing write operations via the API.
 If the API allows write operations with this token that's a vulnerability. The server trusted the client-supplied scope instead of enforcing the developer configured restrictions.
 
 ### Consent Screen Manipulation
