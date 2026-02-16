@@ -1,4 +1,4 @@
-# Hacking OAuth Scopes for Bounties $$$$.
+Hacking OAuth Scopes for Bounties $$$$.
 ## What Are OAuth Scopes?
 When you install or authorize an app on a platform like Shopify, Slack etc, you're redirected to an OAuth authorization URL.
 ```
