@@ -21,7 +21,6 @@ Not every OAuth implementation is testable. You need programs that:
 2. **Provide granular permission controls** — the developer console should let you restrict which scopes your app can request. For example, Slack lets you configure exactly which permissions your app is allowed to request from users.
 
 > **Note:** Creating an app and generating tokens is not always straightforward. You will need to manually read the platform's developer documentation. There are nuances around redirect URLs, client secrets, authorization flows, and token exchange endpoints that vary per platform. Take the time to understand the target's OAuth implementation before testing. Because of these hurdles most people don't bother creating OAuth apps and without creating apps you can't test permission realted issues in Oauth scopes.
----
 
 ## The Golden Rule: More Scope = More Attack Surface
 
