@@ -76,7 +76,7 @@ For example the generated token has `users.read` permission check whether the `/
 ```json
 // Response from /users — should NOT include team data after teams scope removal
 {
-  "contacts": [
+  "users": [
     {
       "id": "12345",
       "name": "John Doe",
