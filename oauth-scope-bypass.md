@@ -5,12 +5,12 @@ When you install or authorize an app on a platform like Shopify, Slack etc, you'
 https://example.com/v2/oauth?scope=read,write&redirect_url=https://test.com
 ```
 We click "Allow" and move on. But most of us don't check what that `scope` parameter means. The scope parameter defines **what permissions the generated access token will have** on the API.
+
 | Scope Value        | Token Can Do                      |
 | ------------------ | --------------------------------- |
 | `read`             | Read-only access to API resources |
 | `read,write`       | Read and write access             |
 | `read,write,admin` | Full administrative access        |
-
 
 If you request `scope=read`, the token should **only** be able to read data. If you request `scope=read,write`, it should be able to read **and** modify data. That's the theory but implementations break. Few years ago someone on Twitter tweeted about testing on oauth scopes sadly i couldn't find that tweet it was a cool post. Luckily at that time I was already testing an app with OAuth scopes and found few oauth scopes realted vuln. The fact that I found no duplicates confirmed it that people rarely test this stuff, for a few reasons I will explain later.
 
