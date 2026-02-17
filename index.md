@@ -56,19 +56,18 @@ title: Siddharth Chhetry | Security Research
 <div class="post-item">
   <span>
     <a href="oauth-scope-bypass.md">Hacking OAuth Scopes for Fun and Profit</a>
-    <span class="tag">New</span>
   </span>
   <span class="date">2026-02-17</span>
 </div>
 
 ## Focus Areas
-* **Web Security:** 
-* **Cloud Infrastructure:**
-* **API Security:** 
----
+* **Web Security** 
+* **Cloud Infrastructure**
+* **API Security** 
+
 
 ## Connect
-[GitHub](https://github.com/jeetbhdr) • [X / Twitter](https://x.com/jeetbhdr)
+• [X / Twitter](https://x.com/jeetbhdr)
 
 <footer style="margin-top: 50px; font-size: 0.8em; color: #8b949e;">
   &copy; 2026 Siddharth Chhetry
