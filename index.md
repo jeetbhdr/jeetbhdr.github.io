@@ -9,7 +9,7 @@ title: Siddharth Chhetry | Security Research
   Security Researcher & Bug Bounty Hunter.
 </div>
 
-## Featured Writeups
+## Writeups
 
 <div class="post-item">
   <span>
