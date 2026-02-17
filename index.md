@@ -1,9 +1,7 @@
 ---
-layout: default
 title: Siddharth Chhetry | Security Research
 ---
 
-<link rel="stylesheet" href="style.css">
 
 # Siddharth Chhetry
 
