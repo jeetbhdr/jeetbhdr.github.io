@@ -55,7 +55,7 @@ title: Siddharth Chhetry | Security Research
 
 <div class="post-item">
   <span>
-    <a href="oauth-scope-bypass.md">Hacking OAuth Scopes for Fun and Profit</a>
+    <a href="oauth-scope-bypass">Hacking OAuth Scopes for Fun and Profit</a>
   </span>
   <span class="date">2026-02-17</span>
 </div>
