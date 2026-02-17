@@ -4,6 +4,7 @@
   --accent: #58a6ff;
   --border: #30363d;
   --code-bg: #161b22;
+  --table-border: #444c56;
 }
 
 body {
@@ -16,39 +17,42 @@ body {
   padding: 0 20px;
 }
 
-h1 { border-bottom: 1px solid var(--border); padding-bottom: 10px; color: #f0f6fc; }
-h2 { color: #f0f6fc; margin-top: 40px; border-bottom: 1px solid var(--border); padding-bottom: 5px; }
+h1, h2, h3 { border-bottom: 1px solid var(--border); padding-bottom: 8px; color: #f0f6fc; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
+
+/* Table Styling - Fixes the white table in your screenshot */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  background-color: var(--code-bg);
+}
+th, td {
+  border: 1px solid var(--table-border);
+  padding: 12px;
+  text-align: left;
+}
+th { background-color: #21262d; color: #f0f6fc; }
+
+/* Code and URL bar styling */
+code {
+  background: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  font-family: monospace;
+}
+pre {
+  background: var(--code-bg);
+  padding: 16px;
+  border-radius: 6px;
+  overflow: auto;
+  border: 1px solid var(--border);
+}
 
 .post-item {
   display: flex;
   justify-content: space-between;
   padding: 12px 0;
   border-bottom: 1px dotted var(--border);
-}
-
-.date { color: #8b949e; font-family: monospace; font-size: 0.9em; }
-
-.bio { font-size: 1.1em; color: #8b949e; margin-bottom: 30px; }
-
-.tag {
-  background: #238636;
-  color: white;
-  padding: 2px 8px;
-  border-radius: 12px;
-  font-size: 0.7em;
-  vertical-align: middle;
-  margin-left: 10px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-pre, code {
-  background: var(--code-bg);
-  padding: 5px;
-  border-radius: 6px;
-  font-family: "SFMono-Regular", Consolas, monospace;
-  font-size: 0.9em;
-  overflow-x: auto;
 }
