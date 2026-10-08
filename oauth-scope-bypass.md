@@ -119,3 +119,39 @@ Standard IDOR testing applies to OAuth-scoped tokens:
 **Happy Hacking and be kind to each other :) :)**
 
 *Used AI to help structure and clean up this writeup.*
+
+<div id="writeup-end"></div>
+
+<script>
+// Pendo Track Event: fires writeup_read_completed at most once per page view,
+// when the reader reaches the end of this writeup (the #writeup-end sentinel
+// above scrolls into view). Does nothing if Pendo isn't loaded on the page.
+(function () {
+  var loadedAt = Date.now();
+  var sentinel = document.getElementById('writeup-end');
+  if (!sentinel || !('IntersectionObserver' in window)) return;
+  var tracked = false;
+  var observer = new IntersectionObserver(function (entries) {
+    var reachedEnd = entries.some(function (entry) {
+      return entry.isIntersecting;
+    });
+    if (tracked || !reachedEnd) return;
+    if (!window.pendo || typeof window.pendo.track !== 'function') return;
+    tracked = true;
+    observer.disconnect();
+    var referrerHost = '';
+    try {
+      referrerHost = document.referrer ? new URL(document.referrer).hostname : '';
+    } catch (e) {
+      // Unparsable referrer; reported as 'direct' below.
+    }
+    window.pendo.track('writeup_read_completed', {
+      writeup_slug: 'oauth-scope-bypass',
+      writeup_title: 'Hacking OAuth Scopes for Fun and Profit',
+      seconds_to_complete: Math.round((Date.now() - loadedAt) / 1000),
+      referrer_host: referrerHost || 'direct'
+    });
+  });
+  observer.observe(sentinel);
+})();
+</script>
