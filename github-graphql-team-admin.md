@@ -90,7 +90,7 @@ mutation UpdateTeamsRepository(
 }
 ```
 
-And here is the raw request for reference. It worked with a fine-grained PAT, a user access token, or an installation access token.
+And here is the raw request for reference. It worked with a fine-grained PAT or a user access token or an installation access token.
 
 ```
 POST /graphql HTTP/2
