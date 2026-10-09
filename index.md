@@ -6,10 +6,18 @@ title: Siddharth Chhetry | Security Research
 # Siddharth Chhetry
 
 <div class="bio">
-  Security Researcher & Bug Bounty Hunter.
+  I'm a security researcher and bug bounty hunter focused on web, cloud, and API security.<br>
+  Ranked in the top 500 on both Bugcrowd and Intigriti, with 300+ valid submissions across various programs.
 </div>
 
 ## Writeups
+
+<div class="post-item">
+  <span>
+    <a href="github-graphql-team-admin">How a GitHub Marketplace App Could Have Taken Over Your Repository</a>
+  </span>
+  <span class="date">2026-10-09</span>
+</div>
 
 <div class="post-item">
   <span>
